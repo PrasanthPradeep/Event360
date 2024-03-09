@@ -1,0 +1,106 @@
+.topnav {
+  overflow: hidden;
+  background-color: #292c35 ;
+  margin-top: 10px;
+}
+
+.topnav a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  float: left;
+  display: block;
+  color: #2bff00;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav a:hover {
+  border-radius: 50px;
+  background-color: rgb(72, 255, 0);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #d9ff00;
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.bdytxt {
+  font-size: 150px;
+  text-align: center;
+  font-family: var(--font-inria-serif);
+}
+
+.txt {
+  font-size: 50;
+  color: #D52941;
+  font-size: var(--font-size-21xl);
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-style {
+  border: none;
+  border-radius: 25px;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  font-size: 80px;
+  flex-grow: 1;
+  text-align: center;
+  height: 300px;
+  width:300px;
+  margin:50px;
+  line-height: 300px;
+}
+
+.button-container:hover {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-style:hover {
+  border: none;
+  border-radius: 25px;
+  background-color: #02b7ff;
+  color: rgb(3, 3, 3);
+  cursor: pointer;
+  font-size: 80px;
+  flex-grow: 1;
+  text-align: center;
+  height: 300px;
+  width:300px;
+  margin:50px;
+  line-height: 300px;
+}
+
+body {
+  background-color: #e3e3e3;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+  align-content: center;
+}
+
+:root {
+  --font-inria-serif: "Inria Serif";
+  --font-inter: Inter;
+  --font-size-21xl: 40px;
+  --font-size-77xl: 96px;
+  --color-white: #fff;
+  --color-gainsboro: #d9d9d9;
+  --color-black: #000;
+  --padding-9xs: 4px;
+  --br-6xl: 25px;
+}
