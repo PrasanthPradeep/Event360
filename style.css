@@ -3,20 +3,25 @@
   background-color: #292c35 ;
   margin-top: 10px;
   width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .topnav a {
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 100px;
-  margin-right: auto;
-  float: left;
+  margin-left: 10px;
+  border: #02b7ff solid;
+  border-radius: 50px;
   display: block;
   color: #2bff00;
   text-align: center;
   padding: 14px 16px;
+  text-align: center;
   text-decoration: none;
   font-size: 30px;
+  display: inline-block;
 }
 
 .topnav a:hover {
@@ -46,10 +51,14 @@
 
 .button-container {
   display: flex;
+  flex-wrap: wrap;
+  display: flex;
   justify-content: space-between;
 }
 
 .button-style {
+  flex: 1 0 40%; /* Each button takes up 25% of the container width */
+  margin: 5px;
   border: none;
   border-radius: 25px;
   background-color: #000000;
@@ -106,12 +115,52 @@ body {
   --br-6xl: 25px;
 }
 @media screen and (max-width: 600px) {
+
+  .topnav {
+    overflow: hidden;
+    background-color: #292c35 ;
+    margin-top: 0px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  .topnav a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 10px 10px;
+    border: #02b7ff solid;
+    border-radius: 50px;
+    display: block;
+    color: #2bff00;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    display: inline-block;
+  }
+  
+  .topnav a:hover {
+    border-radius: 50px;
+    background-color: rgb(72, 255, 0);
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #d9ff00;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+  }
+
   .button-container {
   display: flex;
   justify-content: space-between;
 }
 
 .button-style {
+  flex: 1 0 50%;
   border: none;
   border-radius: 25px;
   background-color: #000000;
@@ -121,10 +170,11 @@ body {
   flex-grow: 1;
   text-align: center;
   align-content: center;
-  height: 150px;
-  width:150px;
-  line-height: 150px;
+  height: 9%;
+  width:auto;
+  line-height: 100px;
   padding:50px 50px;
+  margin: 20px 20px;
 }
 
 .button-container:hover {
@@ -141,21 +191,21 @@ body {
   font-size: 50px;
   flex-grow: 1;
   text-align: center;
-  height: 150px;
-  width:150px;
+  height: 100px;
+  width:100px;
   margin:10px;
   line-height: 20px;
   padding:50px 50px;}
 }
 
 .bdytxt {
-  font-size: 75px;
+  font-size: 60px;
   text-align: center;
   font-family: var(--font-inria-serif);
 }
 
 .txt {
-  font-size: 25;
+  font-size: 15px;
   color: #D52941;
   font-size: var(--font-size-21xl);
   text-align: center;
